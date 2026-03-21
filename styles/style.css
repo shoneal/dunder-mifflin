@@ -92,7 +92,6 @@ address {
 
 .logo {
   width: 100px;
-  margin: var(--gap-max) auto;
 }
 
 .icon {
@@ -112,6 +111,10 @@ address {
   padding: 0 var(--margin);
   color: white;
   background-color: var(--brand-color);
+}
+
+.over .logo {
+  margin: var(--gap-max) auto;
 }
 
 .over div {
@@ -134,6 +137,10 @@ header {
   z-index: 1;
   width: 100%;
   background-color: white;
+}
+
+header .logo {
+  margin: var(--gap-min) auto;
 }
 
 main {
