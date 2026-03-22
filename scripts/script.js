@@ -204,3 +204,20 @@ document.addEventListener("click", (e) => {
     e.preventDefault();
   }
 });
+
+function handleHeaderScroll() {
+  const header = document.querySelector("header");
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= 50) {
+    header.classList.add("is-open");
+  } else {
+    header.classList.remove("is-open");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  handleHeaderScroll();
+});
+
+window.addEventListener("scroll", handleHeaderScroll);
